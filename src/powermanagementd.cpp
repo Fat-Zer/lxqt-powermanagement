@@ -110,7 +110,7 @@ void PowerManagementd::performRunCheck()
     mSettings.sync();
 
     mNotification.setSummary(tr("Power Management"));
-    mNotification.setBody(tr("You are running LXQt Power Management for the first time.\nYou can configure it from settings... "));
+    mNotification.setBody(tr("You are running LXQt Power Management for the first time.\nYou can configure it from settings..."));
     mNotification.setActions(QStringList() << tr("Configure..."));
     mNotification.setTimeout(10000);
     connect(&mNotification, SIGNAL(actionActivated(int)), SLOT(runConfigure()));
